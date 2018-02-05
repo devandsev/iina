@@ -15,6 +15,23 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
             <rect key="frame" x="0.0" y="0.0" width="500" height="402"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="fbJ-4q-lwq">
+                    <rect key="frame" x="18" y="366" width="464" height="18"/>
+                    <buttonCell key="cell" type="check" title="Show subtitles only while paused" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="KQO-d3-kTu">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="nyg-fH-Pug" name="value" keyPath="values.subShowOnlyWhilePaused" id="Aeq-3y-GCW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fbJ-4q-lwq" secondAttribute="trailing" constant="20" id="LsW-NW-6tB"/>
+                <constraint firstItem="fbJ-4q-lwq" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="p8K-Wr-cf6"/>
+                <constraint firstItem="fbJ-4q-lwq" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="pwm-Sk-F9D"/>
+            </constraints>
             <point key="canvasLocation" x="202" y="234"/>
         </customView>
         <userDefaultsController representsSharedInstance="YES" id="nyg-fH-Pug"/>
