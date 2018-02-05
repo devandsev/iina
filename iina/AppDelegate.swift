@@ -70,6 +70,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       PrefControlViewController(),
       PrefKeyBindingViewController(),
       PrefAdvancedViewController(),
+      PrefExperimentalViewController(),
     ], title: NSLocalizedString("preference.title", comment: "Preference"))
   }()
 
